@@ -1,1 +1,51 @@
-Hello World
+<!DOCTYPE html>
+<html ng-app='home'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kyle's Site</title>
+  </head>
+  <body ng-controller="MainController">
+<!--Navbar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class = "navbar-brand" href="#">{{person.firstName}}</a>
+        </div>
+        <div class="">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+          </ul>
+        </div>
+<!--End of Navbar-->
+      </div>
+    </nav>
+    <h1>Welcome to my Site!</h1>
+
+    <div class="container" id="mainbody">
+    <h1> This site is a work in progress and will be updated frequently.
+    </h1>
+    </div>
+<!-- Footer -->
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+        <div class="footer-pad">
+          <a class="Footer"></a>
+        </div>
+      </div>
+    </div>
+    <!--Footer Information -->
+    <!--Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
